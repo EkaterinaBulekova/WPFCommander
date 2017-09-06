@@ -19,7 +19,8 @@ namespace WpfCommander
             this.ProgressValue = 1.0;
             this.SourceDestination = sourDest;
             var key = sourDest.Keys.First() ?? string.Empty;
-            this.CopyMessage = string.Format("Хотите скопировать из {0} в {1}?", key , sourDest[key] ?? string.Empty);
+            this.CopyMessage = string.Format($"Хотите скопировать из {key} в { sourDest[key] ?? string.Empty}?");
+            
         }
     }
 }
